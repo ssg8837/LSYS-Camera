@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.administrator.lsys_camera.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_main_menu" />
+
+    <LinearLayout
+        android:id="@+id/id_main_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#FFDDDD">
+
+        <ImageView
+            android:id="@+id/id_icon_collage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/id_icon_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/id_icon_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/id_icon_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/id_icon_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginRight="10dp"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/id_icon_timer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_timer"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/id_icon_flash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_flash"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:id="@+id/id_icon_change"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_change"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
